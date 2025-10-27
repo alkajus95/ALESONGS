@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+<body>
+  <div class="player-container">
+        <div class="cover-container">
+            <img id="imagen" src="./public/portraits/Face-smile.svg.png" alt="Portada">
+        </div>
+        <h2 id="titulo">canciones de Alejo</h2>
+        
+        <div class="progress-container">
+            <div class="progress-bar" id="progress-bar">
+                <div class="progress" id="progress"></div>
+            </div>
+            <div class="time-info">
+                <span id="current-time">0:00</span>
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+        
+        <div class="controls">
+            <button onclick="prevSong()" title="Anterior">⏮</button>
+            <button id="play-pausa" onclick="togglePlay()" title="Reproducir/Pausar">▶</button>
+            <button onclick="nextSong()" title="Siguiente">⏭</button>
+        </div>
+        
+        <audio id="cancion"></audio>
+    </div>
+</body>
+<script src="./src/main.js"></script>
+</html>
